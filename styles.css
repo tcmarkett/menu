@@ -1,143 +1,218 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acai Bowls and Smoothies - Town & Country Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
 
-/* Body Styling */
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
+        /* Body Styling */
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background-color: #000;
+          color: #fff;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          padding: 20px;
+        }
 
-/* Container */
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
+        /* Container */
+        .container {
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+        }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #ffcc00; /* Yellow color for the main title */
-}
+        h1 {
+          font-size: 2em;
+          margin-bottom: 20px;
+          color: #ffcc00; /* Yellow color for the main title */
+        }
 
-/* Section Styling */
-.section {
-  margin-bottom: 30px;
-}
+        /* Section Styling */
+        .section {
+          margin-bottom: 30px;
+        }
 
-/* Section Titles */
-.section-title {
-  font-size: 1.5em;
-  color: #ffcc00; /* Yellow color for section titles */
-  font-weight: bold;
-  margin: 20px 0;
-}
+        /* Section Titles */
+        .section-title {
+          font-size: 1.5em;
+          color: #ffcc00; /* Yellow color for section titles */
+          font-weight: bold;
+          margin: 20px 0;
+        }
 
-/* Paragraph Styling */
-p {
-  font-size: 1em;
-  color: #fff;
-  margin: 5px 0;
-}
+        /* Paragraph Styling */
+        p {
+          font-size: 1em;
+          color: #fff;
+          margin: 5px 0;
+        }
 
-/* Navigation Styling */
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+        /* Navigation Styling */
+        nav ul {
+          list-style: none;
+          padding: 0;
+        }
 
-nav ul li {
-  margin: 10px 0;
-}
+        nav ul li {
+          margin: 10px 0;
+        }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s;
-}
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.2em;
+          transition: color 0.3s;
+        }
 
-nav ul li a:hover {
-  color: #ffcc00; /* Highlight color on hover */
-}
-/* Make sure the header is visible on mobile devices */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: transparent;
-  padding: 10px 0;
-}
+        nav ul li a:hover {
+          color: #ffcc00; /* Highlight color on hover */
+        }
 
-/* Header link styling */
-header ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
+        /* Header with Dropdown */
+        header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          background-color: transparent;
+          padding: 10px 0;
+        }
 
-header ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
+        /* Header link styling */
+        header ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+        }
 
-/* Header link styling */
-header ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  display: block;
-  background-color: black; /* Set background color to black */
-}
+        header ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative; /* Positioning context for dropdown */
+        }
 
-/* Hover effect */
-header ul li a:hover {
-  background-color: #333; /* Darker background on hover */
-  color: white; /* Keep text color white on hover */
-  border-radius: 5px;
-}
+        /* Header link styling */
+        header ul li a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          display: block;
+          background-color: black; /* Set background color to black */
+        }
 
+        /* Hover effect */
+        header ul li a:hover {
+          background-color: #333; /* Darker background on hover */
+          color: white; /* Keep text color white on hover */
+          border-radius: 5px;
+        }
 
-/* Adjusting the container's padding for mobile */
-.container {
-  padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
-}
+        /* Dropdown Menu (hidden by default) */
+        header ul li .dropdown {
+          display: none;
+          position: absolute;
+          top: 100%; /* Position it below the parent menu item */
+          left: 0;
+          background-color: #333;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+          z-index: 1000;
+          width: 200px; /* Set a fixed width for the dropdown */
+        }
 
-h1, h2, h3 {
-  margin-top: 40px;
-}
+        header ul li .dropdown li {
+          display: block; /* Stack submenu items vertically */
+        }
 
-section {
-  margin-bottom: 30px;
-}
+        /* Show the dropdown when hovering over the parent li */
+        header ul li:hover .dropdown {
+          display: block;
+        }
 
-/* Optional: Add media queries for smaller screens to optimize the layout */
-@media (max-width: 768px) {
-  header ul li {
-    display: block; /* Stack links vertically */
-    margin: 5px 0;  /* Adjust margin for better spacing */
-  }
-  header ul li a {
-    font-size: 18px; /* Increase font size for readability */
-    padding: 15px; /* Increase padding for easier clicking */
-  }
-  .container {
-    padding-top: 150px; /* Adjust further for small screens */
-  }
-}
+        /* Hover effect for dropdown items */
+        header ul li .dropdown li a {
+          color: white;
+          padding: 10px 20px;
+        }
 
+        header ul li .dropdown li a:hover {
+          background-color: #f1f1f1;
+          color: black;
+          border-radius: 5px;
+        }
+
+        /* Adjusting the container's padding for mobile */
+        .container {
+          padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
+        }
+
+        h1, h2, h3 {
+          margin-top: 40px;
+        }
+
+        section {
+          margin-bottom: 30px;
+        }
+
+        /* Optional: Add media queries for smaller screens to optimize the layout */
+        @media (max-width: 768px) {
+          header ul li {
+            display: block; /* Stack links vertically */
+            margin: 5px 0;  /* Adjust margin for better spacing */
+          }
+          header ul li a {
+            font-size: 18px; /* Increase font size for readability */
+            padding: 15px; /* Increase padding for easier clicking */
+          }
+          .container {
+            padding-top: 150px; /* Adjust further for small screens */
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Navigation and Dropdown -->
+    <header>
+        <ul>
+            <li><a href="home.html"><strong>HOME</strong></a></li>
+            <li>
+                <a href="breakfast.html"><strong>BREAKFAST</strong></a>
+                <ul class="dropdown">
+                    <li><a href="pancakes.html">Pancakes</a></li>
+                    <li><a href="eggs.html">Eggs</a></li>
+                    <li><a href="waffles.html">Waffles</a></li>
+                </ul>
+            </li>
+            <li><a href="paninis.html"><strong>PANINIS</strong></a></li>
+            <li><a href="signature_heros.html"><strong>SIGNATURE HEROS</strong></a></li>
+            <li><a href="signature_wraps.html"><strong>SIGNATURE WRAPS</strong></a></li>
+            <li><a href="acai_smoothie.html"><strong>ACAI & SMOOTHIES</strong></a></li>
+            <li><a href="deli_counter.html"><strong>DELI COUNTER</strong></a></li>
+            <li><a href="salad.html"><strong>SALAD BAR</strong></a></li>
+            <li><a href="grill.html"><strong>GRILL</strong></a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h1>ACAI BOWLS AND SMOOTHIES</h1>
+
+        <!-- Add your content here -->
+
+    </div>
+</body>
+</html>
