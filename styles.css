@@ -1,0 +1,73 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Yellow color for the main title */
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5em;
+  color: #ffcc00; /* Yellow color for section titles */
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1em;
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
