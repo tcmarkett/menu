@@ -71,3 +71,73 @@ nav ul li a {
 nav ul li a:hover {
   color: #ffcc00; /* Highlight color on hover */
 }
+/* Make sure the header is visible on mobile devices */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+/* Header link styling */
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Header link styling */
+header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: block;
+  background-color: black; /* Set background color to black */
+}
+
+/* Hover effect */
+header ul li a:hover {
+  background-color: #333; /* Darker background on hover */
+  color: white; /* Keep text color white on hover */
+  border-radius: 5px;
+}
+
+
+/* Adjusting the container's padding for mobile */
+.container {
+  padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
+}
+
+h1, h2, h3 {
+  margin-top: 40px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* Optional: Add media queries for smaller screens to optimize the layout */
+@media (max-width: 768px) {
+  header ul li {
+    display: block; /* Stack links vertically */
+    margin: 5px 0;  /* Adjust margin for better spacing */
+  }
+  header ul li a {
+    font-size: 18px; /* Increase font size for readability */
+    padding: 15px; /* Increase padding for easier clicking */
+  }
+  .container {
+    padding-top: 150px; /* Adjust further for small screens */
+  }
+}
+
