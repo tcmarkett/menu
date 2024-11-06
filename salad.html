@@ -1,58 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salad Bar - Town & Country Market</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast - Town & Country Market</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Remove the gray background from the header */
-        header {
-            position: fixed; /* Fixes the header at the top */
-            top: 0; /* Aligns it to the top of the page */
-            left: 0;
-            width: 100%; /* Ensures the header spans the full width */
-            z-index: 1000; /* Makes sure the header stays on top of other content */
-            background-color: transparent; /* Make the background transparent */
-            padding: 10px 0;
-        }
-        /* Style for the navigation list */
-        header ul {
-            list-style-type: none; /* Remove the default list styling */
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-        header ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-        header ul li a {
-            color: white; /* Set the text color to white */
-            text-decoration: none;
-            padding: 10px 20px;
-            font-weight: bold;
-            display: block;
-        }
-        header ul li a:hover {
-            background-color: #f1f1f1; /* Light background on hover */
-            color: black; /* Change text color to black on hover */
-            border-radius: 5px;
-        }
-        /* Adjust the container to prevent it from being hidden behind the fixed header */
-        .container {
-            padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
-        }
-        h1, h2, h3 {
-            margin-top: 40px;
-        }
-        section {
-            margin-bottom: 30px;
-        }
+      /* Remove the gray background from the header */
+      header {
+          position: fixed; /* Fixes the header at the top */
+          top: 0; /* Aligns it to the top of the page */
+          left: 0;
+          width: 100%; /* Ensures the header spans the full width */
+          z-index: 1000; /* Makes sure the header stays on top of other content */
+          background-color: transparent; /* Make the background transparent */
+          padding: 10px 0;
+      }
+      /* Style for the navigation list */
+      header ul {
+          list-style-type: none; /* Remove the default list styling */
+          padding: 0;
+          margin: 0;
+          text-align: center;
+      }
+      header ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative; /* Needed for dropdown positioning */
+      }
+      header ul li a {
+          color: white; /* Set the text color to white */
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          display: block;
+      }
+      header ul li a:hover {
+          background-color: #f1f1f1; /* Light background on hover */
+          color: black; /* Change text color to black on hover */
+          border-radius: 5px;
+      }
+
+      /* Dropdown menu styling */
+      header ul li ul {
+          display: none; /* Hide the dropdown initially */
+          position: absolute;
+          top: 100%; /* Position dropdown below the parent link */
+          left: 0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: #333; /* Dark background for visibility */
+          border-radius: 5px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for a floating effect */
+      }
+
+      /* Show the dropdown when hovering over the parent list item */
+      header ul li:hover > ul {
+          display: block;
+      }
+
+      header ul li ul li {
+          display: block; /* Stack the dropdown links vertically */
+          margin: 0;
+      }
+
+      header ul li ul li a {
+          color: white;
+          padding: 10px 20px;
+          font-weight: normal;
+          display: block;
+      }
+
+      header ul li ul li a:hover {
+          background-color: #555; /* Darker background on hover */
+          color: white;
+      }
+
+      /* Adjust the container to prevent it from being hidden behind the fixed header */
+      .container {
+          padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
+      }
+
+      h1, h2, h3 {
+          margin-top: 40px;
+      }
+      section {
+          margin-bottom: 30px;
+      }
     </style>
-</head>
-<body>
-<header>
+  </head>
+  <body>
+    <!-- Header with navigation buttons -->
+    <header>
       <ul>
           <!-- Dropdown Menu Example -->
           <li>
@@ -71,48 +111,54 @@
           </li>
       </ul>
     </header>
-
-</head>
-<body>
     <div class="container">
-        <h1>Salad Bar</h1>
+      <h1>PANINIS</h1>
+      <h2 class="section-title">HALF $6.99 | WHOLE $10.99</h2>
+      <!-- Panini Items Section -->
+      <div class="section">
+        <p><strong>ORIENT BEACH:</strong></p>
+        <p>EVERROAST CHICKEN, FRESH MOZZARELLA, ROASTED PEPPERS + PESTO</p>
+        <p>
 
-        <!-- Salad Options -->
-        <div class="salad-options">
-            <h2>Salads</h2>
+        </p>
+        <p><strong>PIKES BEACH:</strong></p>
+            <p>  HONEY MAPLE TURKEY, SMOKED GOUDA CHEESE, BACON + HONEY MUSTARD</p>
+            <p>
 
-            <h3>B.L.A.T.</h3>
-            <p>Crumbled Bacon, Lettuce, Avocado, Cherry Tomatoes</p>
-            <p>Small: $8.99 | Large: $10.99</p>
+            </p>
+        <p><strong>ROGERS BEACH:</strong> </p>
+            <p> BUFFALO CHICKEN, PEPPER JACK, CUCUMBER + RANCH</p>
+            <p>
 
-            <h3>Greek</h3>
-            <p>Romaine, Peppers, Olives, Red Onion, Cucumber, Feta</p>
-            <p>Small: $8.99 | Large: $10.99</p>
+            </p>
+        <p><strong>SAGG MAIN BEACH:</strong> </p>
+            <p>VIRGINIA HAM, WHITE AMERICAN, PICKLE BACON + HONEY MUSTARD</p>
+            <p>
 
-            <h3>Caesar</h3>
-            <p>Romaine, Croutons, Parmesan, Grilled Chicken</p>
-            <p>Small: $8.59 | Large: $10.59</p>
+            </p>
+        <p><strong>SHINNECOCK BEACH:</strong></p>
+            <p>CRACKED PEPPERCORN TURKEY, MUENSTER, BACON, ROASTED PEPPERS + RUSSIAN</p>
+            <p>
 
-            <h3>Cobb</h3>
-            <p>Iceberg, Romaine, Cherry Tomatoes, Cheddar, Mozzarella, Bacon, Egg, Fried Chicken</p>
-            <p>Small: $8.99 | Large: $10.99</p>
+            </p>
+        <p><strong>FLEETS COVE:</strong> </p>
+            <p>ROAST BEEF, CHEDDAR, GRILLED ONIONS + BBQ SAUCE, GARLIC BREAD PANINI</p>
+            <p>
 
-            <h3>Sr. Mix A Lot</h3>
-            <p>Spring Mix, Walnuts, Crumbled Blue Cheese, Cranberries, Strawberries</p>
-            <p>Small: $7.99 | Large: $10.49</p>
+            </p>
+        <p><strong>SOUND BEACH:</strong> </p>
+        <p>SLICED CHICKEN, MONTEREY JACK, RED ONION, BACON + RANCH</p>
+        <p>
 
-            <h3>Create Your Own Salad</h3>
-            <p>Small: $5.89 | Large: $7.99</p>
-            <p><strong>Base Price:</strong> $10.99</p>
-            <p>Choose 4 Toppings: Each additional topping $0.50</p>
-            <p>Choose 1 Protein: Additional proteins $2.00 each</p>
-        </div>
-
-        <!-- Dressings Section -->
-        <div class="dressings">
-            <h2>Dressings</h2>
-            <p>Ranch, Thousand Island, Raspberry Vinaigrette, Honey Mustard, Caesar, Oil + Vinegar, Blue Cheese, Parmesan Peppercorn, Balsamic Vinaigrette</p>
-        </div>
+        </p>
+        <p><strong>NUDE BEACH:</strong> </p>
+            <p>BALSAMIC GRILLED VEGETABLES + FRESH MOZZARELLA</p>
+            <p>
+                
+            </p>
+        <p><strong>COOPERS BEACH:</strong> </p>
+            <p>CHICKEN CUTLET, HOT SAUCE, PEPPER JACK CHEESE, BLUE CHEESE DRESSING</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
