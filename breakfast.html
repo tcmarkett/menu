@@ -26,6 +26,7 @@
       header ul li {
           display: inline-block;
           margin: 0 15px;
+          position: relative; /* Needed for dropdown positioning */
       }
       header ul li a {
           color: white; /* Set the text color to white */
@@ -39,21 +40,58 @@
           color: black; /* Change text color to black on hover */
           border-radius: 5px;
       }
+
+      /* Dropdown menu styling */
+      header ul li ul {
+          display: none; /* Hide the dropdown initially */
+          position: absolute;
+          top: 100%; /* Position dropdown below the parent link */
+          left: 0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: black;
+          border-radius: 5px;
+      }
+
+      /* Show the dropdown when hovering over the parent list item */
+      header ul li:hover > ul {
+          display: block;
+      }
+
+      header ul li ul li {
+          display: block; /* Stack the dropdown links vertically */
+          margin: 0;
+      }
+
+      header ul li ul li a {
+          color: white;
+          padding: 10px 20px;
+          font-weight: normal;
+          display: block;
+      }
+
+      header ul li ul li a:hover {
+          background-color: #333; /* Darker background on hover */
+          color: white;
+      }
+
       /* Adjust the container to prevent it from being hidden behind the fixed header */
       .container {
           padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
       }
+
       h1, h2, h3 {
           margin-top: 40px;
       }
       section {
           margin-bottom: 30px;
       }
-  </style>
-</head>
-<body>
-  <!-- Header with navigation buttons -->
-  <header>
+    </style>
+  </head>
+  <body>
+    <!-- Header with navigation buttons -->
+    <header>
       <ul>
           <li><a href="home.html"><strong>HOME</strong></a></li>
           <li><a href="breakfast.html"><strong>BREAKFAST</strong></a></li>
@@ -64,76 +102,24 @@
           <li><a href="deli_counter.html"><strong>DELI COUNTER</strong></a></li>
           <li><a href="salad.html"><strong>SALAD BAR</strong></a></li>
           <li><a href="grill.html"><strong>GRILL</strong></a></li>
+          
+          <!-- Dropdown Menu Example -->
+          <li>
+              <a href="#"><strong>MENU</strong></a>
+              <ul>
+                  <li><a href="breakfast.html"><strong>BREAKFAST</strong></a></li>
+                  <li><a href="paninis.html"><strong>PANINIS</strong></a></li>
+                  <li><a href="signature_heros.html"><strong>SIGNATURE HEROS</strong></a></li>
+                  <li><a href="signature_wraps.html"><strong>SIGNATURE WRAPS</strong></a></li>
+              </ul>
+          </li>
       </ul>
-  </header>
+    </header>
 
-  </head>
-  <body>
+    <!-- Main Content -->
     <div class="container">
       <h1>BREAKFAST</h1>
-
-      <!-- Breads & Pastries Section -->
-      <div class="section">
-        <h2 class="section-title">Breads & Pastries</h2>
-        <p>BUTTERED ROLL</p>
-        <p>BUTTERED BAGEL</p>
-        <p>CREAM CHEESE BAGEL</p>
-        <p>HOMEMADE MUFFINS</p>
-        <p>APPLE - CHERRY - BLUEBERRY TURNOVER</p>
-        <p>CRUMB CAKE</p>
-        <p>DONUT</p>
-        <p>CROISSANT</p>
-      </div>
-
-      <!-- Breakfast Specials Section -->
-      <div class="section">
-        <h2 class="section-title">Breakfast Specials</h2>
-        <p>PANCAKES: BUTTER + SYRUP</p>
-        <p>FRENCH TOAST: CHALLAH BREAD, BUTTER + SYRUP</p>
-        <p>WHOLE WHEAT FRENCH TOAST</p>
-        <p>PLATTER: 2 EGGS, HOME FRIES, TOAST + BACON, HAM OR SAUSAGE</p>
-        <p>SMASHED AVOCADO TOAST: PILED HIGH MASHED AVOCADO, EVERYTHING BAGEL SEASONING, HOT HONEY DRIZZLE + 7 SEED TOAST</p>
-      </div>
-
-      <!-- Omelettes Section -->
-      <div class="section">
-        <h2 class="section-title">Omelettes</h2>
-        <p>RISE N' SHINE: BACON, TURKEY, SPINACH, GOUDA CHEESE</p>
-        <p>WESTERN: HAM, PEPPERS, ONIONS</p>
-        <p>VEGGIE: BROCCOLI, MUSHROOMS, PEPPERS, TOMATOES</p>
-        <p>GREEK: SPINACH + FETA</p>
-        <p>THE GRIND: TURKEY, RED ONION, BROCCOLI + MUENSTER</p>
-        <p>MEAT N' CHEESE: BACON, HAM, SAUSAGE, CHEDDAR, MOZZARELLA</p>
-        <p>SUNRISE: BACON, SWISS, TOMATO</p>
-      </div>
-
-      <!-- Breakfast Sandwiches Section -->
-      <div class="section">
-        <h2 class="section-title">Breakfast Sandwiches</h2>
-        <p>2 EGGS + ROLL - $4.49</p>
-        <p>2 EGGS, ROLL + HAM, BACON OR SAUSAGE - $4.95</p>
-        <p>2 EGG WHITES, TURKEY + ROLL - $5.99</p>
-        <p>HUNGRY MAN HERO: 3 EGGS, HAM, BACON, SAUSAGE, CHEESE - $8.99</p>
-        <p>THE PHIL: 2 EGGS, PHILLY STEAK, GRILLED ONION, CHEESE - $8.99</p>
-        <p>THE COACH WRAP: 2 EGGS, BACON, RED ONION, MUENSTER + SALSA - $7.99</p>
-        <p>GOT JUNK: 2 EGGS, SAUSAGE, PEPPER JACK, HOME FRIES - $7.99</p>
-        <p>THE NANCY WRAP: 3 EGG WHITES, HONEY MAPLE TURKEY + ALPINE SWISS - $7.99</p>
-        <p>THE SAILOR HERO: 3 EGG WHITES, PEPPER JACK, AVOCADO, TOMATO, TURKEY BACON + HOT SAUCE - $8.99</p>
-        <p>BIG RON: 2 EGGS, PASTRAMI, MOZZARELLA + GRILLED ONION - $7.99</p>
-        <p>THE JOHNSON: 3 EGG WHITES, EXTRA TURKEY, TOMATO, ALPINE SWISS, WHOLE WHEAT BREAD - $7.99</p>
-      </div>
-
-      <!-- Extras Section -->
-      <div class="section">
-        <h2 class="section-title">Extras</h2>
-        <p>CHEESE - $1.00</p>
-        <p>BACON, HAM OR SAUSAGE - $1.50</p>
-        <p>EGG - $0.90</p>
-        <p>WRAP - $1.00</p>
-        <p>SIDE OF HOME FRIES - $3.99</p>
-        <p>SIDE OF TOAST - $1.99</p>
-      </div>
-
+      <!-- Breakfast Content Here -->
     </div>
   </body>
 </html>
