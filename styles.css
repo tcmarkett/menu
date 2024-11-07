@@ -21,7 +21,7 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   padding-top: 120px; /* Ensure the container is not hidden under the header */
 }
 
