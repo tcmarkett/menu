@@ -5,33 +5,35 @@
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-  display: block; /* Instead of flex */
-  text-align: left !important; /* Ensure left alignment */
-  padding: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  min-height: 100vh;
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
+  text-align: left;
+  padding: 20px;
 }
 
+/* Container */
 .container {
   max-width: 600px;
   margin: 0 auto;
-  padding: 120px 20px 20px; /* Ensure padding for fixed header */
-  text-align: left !important; /* Enforce left alignment here as well */
+  text-align: left;
 }
 
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #ffcc00; /* Yellow color for the main title */
-  text-align: left !important; /* Align title to the left */
 }
 
 /* Section Styling */
 .section {
   margin-bottom: 30px;
-  text-align: left !important; /* Align section content to the left */
 }
 
 /* Section Titles */
@@ -40,7 +42,6 @@ h1 {
   color: #ffcc00; /* Yellow color for section titles */
   font-weight: bold;
   margin: 20px 0;
-  text-align: left !important; /* Align section titles to the left */
 }
 
 /* Paragraph Styling */
@@ -48,7 +49,6 @@ p {
   font-size: 1em;
   color: #fff;
   margin: 5px 0;
-  text-align: left !important; /* Align paragraphs to the left */
 }
 
 /* Navigation Styling */
@@ -59,7 +59,6 @@ nav ul {
 
 nav ul li {
   margin: 10px 0;
-  text-align: left !important; /* Align navigation links to the left */
 }
 
 nav ul li a {
@@ -72,15 +71,14 @@ nav ul li a {
 nav ul li a:hover {
   color: #ffcc00; /* Highlight color on hover */
 }
-
-/* Fixed Header */
+/* Make sure the header is visible on mobile devices */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better contrast */
+  background-color: transparent;
   padding: 10px 0;
 }
 
@@ -89,7 +87,7 @@ header ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 header ul li {
@@ -97,66 +95,49 @@ header ul li {
   margin: 0 15px;
 }
 
+/* Header link styling */
 header ul li a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   font-weight: bold;
   display: block;
-  background-color: black;
+  background-color: black; /* Set background color to black */
 }
 
+/* Hover effect */
 header ul li a:hover {
   background-color: #333; /* Darker background on hover */
-  color: white;
+  color: white; /* Keep text color white on hover */
   border-radius: 5px;
 }
 
-header ul li a:focus {
-  background-color: #333;
-  color: #ffcc00;
-  outline: 2px solid #ffcc00;
-  border-radius: 5px;
-}
 
 /* Adjusting the container's padding for mobile */
 .container {
   padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
 }
 
-h1, h2, h3, p, .section-title {
-  text-align: left !important; /* Ensure left alignment for headings and text */
+h1, h2, h3 {
+  margin-top: 40px;
 }
 
 section {
   margin-bottom: 30px;
 }
 
-/* Media Query for Smaller Screens */
+/* Optional: Add media queries for smaller screens to optimize the layout */
 @media (max-width: 768px) {
   header ul li {
     display: block; /* Stack links vertically */
-    margin: 5px 0;
+    margin: 5px 0;  /* Adjust margin for better spacing */
   }
   header ul li a {
-    font-size: 18px;
-    padding: 15px;
+    font-size: 18px; /* Increase font size for readability */
+    padding: 15px; /* Increase padding for easier clicking */
   }
   .container {
     padding-top: 150px; /* Adjust further for small screens */
   }
 }
 
-/* Additional Media Query for Very Small Screens */
-@media (max-width: 480px) {
-  header ul li a {
-    font-size: 16px; /* Smaller font for readability */
-    padding: 12px;
-  }
-  h1 {
-    font-size: 1.8em;
-  }
-  .container {
-    padding-top: 160px; /* Increase top padding for very small screens */
-  }
-}
