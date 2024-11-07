@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  align-items: flex-start;
+  justify-content: center;
   min-height: 100vh;
   background-color: #000;
   color: #fff;
@@ -21,7 +21,7 @@ body {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left; /* Align text to the left */
   padding: 120px 20px 20px; /* Adjust padding to accommodate fixed header */
 }
 
@@ -29,11 +29,13 @@ h1 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #ffcc00; /* Yellow color for the main title */
+  text-align: left; /* Align title to the left */
 }
 
 /* Section Styling */
 .section {
   margin-bottom: 30px;
+  text-align: left; /* Align section content to the left */
 }
 
 /* Section Titles */
@@ -42,6 +44,7 @@ h1 {
   color: #ffcc00; /* Yellow color for section titles */
   font-weight: bold;
   margin: 20px 0;
+  text-align: left; /* Align section titles to the left */
 }
 
 /* Paragraph Styling */
@@ -49,6 +52,7 @@ p {
   font-size: 1em;
   color: #fff;
   margin: 5px 0;
+  text-align: left; /* Align paragraphs to the left */
 }
 
 /* Navigation Styling */
@@ -59,6 +63,7 @@ nav ul {
 
 nav ul li {
   margin: 10px 0;
+  text-align: left; /* Align navigation links to the left */
 }
 
 nav ul li a {
@@ -96,7 +101,6 @@ header ul li {
   margin: 0 15px;
 }
 
-/* Header link styling */
 header ul li a {
   color: white;
   text-decoration: none;
@@ -106,14 +110,12 @@ header ul li a {
   background-color: black;
 }
 
-/* Hover effect */
 header ul li a:hover {
   background-color: #333; /* Darker background on hover */
   color: white;
   border-radius: 5px;
 }
 
-/* Accessibility: Focus effect */
 header ul li a:focus {
   background-color: #333;
   color: #ffcc00;
