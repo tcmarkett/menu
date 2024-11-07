@@ -5,25 +5,22 @@
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 100vh;
+  display: block; /* Instead of flex */
+  text-align: left; /* Ensure left alignment */
+  padding: 20px;
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
-  padding: 20px;
 }
 
-/* Container */
 .container {
   max-width: 600px;
   margin: 0 auto;
-  text-align: left; /* Align text to the left */
-  padding: 120px 20px 20px; /* Adjust padding to accommodate fixed header */
+  padding: 120px 20px 20px; /* Ensure padding for fixed header */
+  text-align: left; /* Enforce left alignment here as well */
 }
+
 
 h1 {
   font-size: 2em;
@@ -127,10 +124,10 @@ header ul li a:focus {
 .container {
   padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
 }
-
-h1, h2, h3 {
-  margin-top: 40px;
+h1, h2, h3, p, .section-title {
+  text-align: left; /* Ensure left alignment for headings and text */
 }
+
 
 section {
   margin-bottom: 30px;
