@@ -7,7 +7,7 @@
 
 body {
   display: block; /* Instead of flex */
-  text-align: left; /* Ensure left alignment */
+  text-align: left !important; /* Ensure left alignment */
   padding: 20px;
   background-color: #000;
   color: #fff;
@@ -18,21 +18,20 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 120px 20px 20px; /* Ensure padding for fixed header */
-  text-align: left; /* Enforce left alignment here as well */
+  text-align: left !important; /* Enforce left alignment here as well */
 }
-
 
 h1 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #ffcc00; /* Yellow color for the main title */
-  text-align: left; /* Align title to the left */
+  text-align: left !important; /* Align title to the left */
 }
 
 /* Section Styling */
 .section {
   margin-bottom: 30px;
-  text-align: left; /* Align section content to the left */
+  text-align: left !important; /* Align section content to the left */
 }
 
 /* Section Titles */
@@ -41,7 +40,7 @@ h1 {
   color: #ffcc00; /* Yellow color for section titles */
   font-weight: bold;
   margin: 20px 0;
-  text-align: left; /* Align section titles to the left */
+  text-align: left !important; /* Align section titles to the left */
 }
 
 /* Paragraph Styling */
@@ -49,7 +48,7 @@ p {
   font-size: 1em;
   color: #fff;
   margin: 5px 0;
-  text-align: left; /* Align paragraphs to the left */
+  text-align: left !important; /* Align paragraphs to the left */
 }
 
 /* Navigation Styling */
@@ -60,7 +59,7 @@ nav ul {
 
 nav ul li {
   margin: 10px 0;
-  text-align: left; /* Align navigation links to the left */
+  text-align: left !important; /* Align navigation links to the left */
 }
 
 nav ul li a {
@@ -124,10 +123,10 @@ header ul li a:focus {
 .container {
   padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
 }
-h1, h2, h3, p, .section-title {
-  text-align: left; /* Ensure left alignment for headings and text */
-}
 
+h1, h2, h3, p, .section-title {
+  text-align: left !important; /* Ensure left alignment for headings and text */
+}
 
 section {
   margin-bottom: 30px;
