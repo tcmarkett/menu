@@ -110,7 +110,7 @@ header ul li a {
 
 /* Hover effect */
 header ul li a:hover {
-  background-color: #333; /* Darker background on hover */
+  background-color: #ffaa01; /* Darker background on hover */
   color: white; /* Keep text color white on hover */
   border-radius: 5px;
 }
