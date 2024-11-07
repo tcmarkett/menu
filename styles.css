@@ -8,8 +8,9 @@
 /* Body Styling */
 body {
   display: flex;
-  align-items: left;
-  justify-content: left;
+  flex-direction: column;  /* Ensure content is stacked vertically */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Align items to the top */
   min-height: 100vh;
   background-color: #000;
   color: #fff;
@@ -71,6 +72,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #ffcc00; /* Highlight color on hover */
 }
+
 /* Make sure the header is visible on mobile devices */
 header {
   position: fixed;
@@ -112,7 +114,6 @@ header ul li a:hover {
   border-radius: 5px;
 }
 
-
 /* Adjusting the container's padding for mobile */
 .container {
   padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
@@ -137,7 +138,13 @@ section {
     padding: 15px; /* Increase padding for easier clicking */
   }
   .container {
-    padding-top: 150px; /* Adjust further for small screens */
+    padding-top: 160px; /* Adjust further for small screens */
   }
 }
 
+@media (max-width: 480px) {
+  /* Adjust for very small screens */
+  .container {
+    padding-top: 170px; /* Further increase padding for very small screens */
+  }
+}
