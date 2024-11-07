@@ -14,7 +14,6 @@ body {
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
-  text-align: left;
   padding: 20px;
 }
 
@@ -23,6 +22,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  padding: 120px 20px 20px; /* Adjust padding to accommodate fixed header */
 }
 
 h1 {
@@ -71,14 +71,15 @@ nav ul li a {
 nav ul li a:hover {
   color: #ffcc00; /* Highlight color on hover */
 }
-/* Make sure the header is visible on mobile devices */
+
+/* Fixed Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better contrast */
   padding: 10px 0;
 }
 
@@ -102,16 +103,23 @@ header ul li a {
   padding: 10px 20px;
   font-weight: bold;
   display: block;
-  background-color: black; /* Set background color to black */
+  background-color: black;
 }
 
 /* Hover effect */
 header ul li a:hover {
   background-color: #333; /* Darker background on hover */
-  color: white; /* Keep text color white on hover */
+  color: white;
   border-radius: 5px;
 }
 
+/* Accessibility: Focus effect */
+header ul li a:focus {
+  background-color: #333;
+  color: #ffcc00;
+  outline: 2px solid #ffcc00;
+  border-radius: 5px;
+}
 
 /* Adjusting the container's padding for mobile */
 .container {
@@ -126,18 +134,31 @@ section {
   margin-bottom: 30px;
 }
 
-/* Optional: Add media queries for smaller screens to optimize the layout */
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   header ul li {
     display: block; /* Stack links vertically */
-    margin: 5px 0;  /* Adjust margin for better spacing */
+    margin: 5px 0;
   }
   header ul li a {
-    font-size: 18px; /* Increase font size for readability */
-    padding: 15px; /* Increase padding for easier clicking */
+    font-size: 18px;
+    padding: 15px;
   }
   .container {
     padding-top: 150px; /* Adjust further for small screens */
   }
 }
 
+/* Additional Media Query for Very Small Screens */
+@media (max-width: 480px) {
+  header ul li a {
+    font-size: 16px; /* Smaller font for readability */
+    padding: 12px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .container {
+    padding-top: 160px; /* Increase top padding for very small screens */
+  }
+}
