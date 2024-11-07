@@ -7,16 +7,14 @@
 
 /* Body Styling */
 body {
-  display: flex;
-  flex-direction: column;  /* Ensure content is stacked vertically */
-  align-items: flex-start; /* Align items to the left */
-  justify-content: flex-start; /* Align items to the top */
+  display: block;  /* Switch to block layout for better control */
   min-height: 100vh;
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
   text-align: left;
-  padding: 20px;
+  padding: 0;
+  position: relative;  /* Avoid flexbox conflict with fixed header */
 }
 
 /* Container */
@@ -24,6 +22,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 120px; /* Ensure the container is not hidden under the header */
 }
 
 h1 {
@@ -82,6 +81,8 @@ header {
   z-index: 1000;
   background-color: transparent;
   padding: 10px 0;
+  display: block; /* Ensuring the header behaves like a block element */
+  width: 100%;
 }
 
 /* Header link styling */
@@ -114,20 +115,7 @@ header ul li a:hover {
   border-radius: 5px;
 }
 
-/* Adjusting the container's padding for mobile */
-.container {
-  padding: 120px 20px 20px; /* Add extra top padding to ensure content isn't hidden under the fixed header */
-}
-
-h1, h2, h3 {
-  margin-top: 40px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-/* Optional: Add media queries for smaller screens to optimize the layout */
+/* Mobile Adjustment */
 @media (max-width: 768px) {
   header ul li {
     display: block; /* Stack links vertically */
@@ -137,14 +125,15 @@ section {
     font-size: 18px; /* Increase font size for readability */
     padding: 15px; /* Increase padding for easier clicking */
   }
+  /* Adjusting container padding for mobile */
   .container {
-    padding-top: 160px; /* Adjust further for small screens */
+    padding-top: 160px; /* Adjust padding to clear the header */
   }
 }
 
 @media (max-width: 480px) {
-  /* Adjust for very small screens */
+  /* Further adjustments for very small screens */
   .container {
-    padding-top: 170px; /* Further increase padding for very small screens */
+    padding-top: 180px; /* Increase padding on very small screens */
   }
 }
