@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  display: block;  /* Switch to block layout for better control */
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  padding: 0;
+  position: relative;  /* Avoid flexbox conflict with fixed header */
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 120px; /* Ensure the container is not hidden under the header */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Yellow color for the main title */
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5em;
+  color: #ffcc00; /* Yellow color for section titles */
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1em;
+  color: #fff;
+  margin: 5px 0;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Make sure the header is visible on mobile devices */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 10px 0;
+  display: block; /* Ensuring the header behaves like a block element */
+  width: 100%;
+}
+
+/* Header link styling */
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* Header link styling */
+header ul li a {
+  color: #ffaa01;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: block;
+  background-color: black; /* Set background color to black */
+}
+
+/* Hover effect */
+header ul li a:hover {
+  background-color: #ffaa01; /* Darker background on hover */
+  color: white; /* Keep text color white on hover */
+  border-radius: 5px;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+  header ul li {
+    display: block; /* Stack links vertically */
+    margin: 5px 0;  /* Adjust margin for better spacing */
+  }
+  header ul li a {
+    font-size: 18px; /* Increase font size for readability */
+    padding: 15px; /* Increase padding for easier clicking */
+  }
+  /* Adjusting container padding for mobile */
+  .container {
+    padding-top: 160px; /* Adjust padding to clear the header */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .container {
+    padding-top: 180px; /* Increase padding on very small screens */
+  }
+}

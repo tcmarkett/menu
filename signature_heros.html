@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast - Town & Country Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Remove the gray background from the header */
+      header {
+          position: fixed; /* Fixes the header at the top */
+          top: 0; /* Aligns it to the top of the page */
+          left: 0;
+          width: 100%; /* Ensures the header spans the full width */
+          z-index: 1000; /* Makes sure the header stays on top of other content */
+          background-color: transparent; /* Make the background transparent */
+          padding: 10px 0;
+      }
+      /* Style for the navigation list */
+      header ul {
+          list-style-type: none; /* Remove the default list styling */
+          padding: 0;
+          margin: 0;
+          text-align: left;
+      }
+      header ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative; /* Needed for dropdown positioning */
+      }
+      header ul li a {
+          color: white; /* Set the text color to white */
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          display: block;
+      }
+      header ul li a:hover {
+          background-color: #f1f1f1; /* Light background on hover */
+          color: black; /* Change text color to black on hover */
+          border-radius: 5px;
+      }
+
+      /* Dropdown menu styling */
+      header ul li ul {
+          display: none; /* Hide the dropdown initially */
+          position: absolute;
+          top: 100%; /* Position dropdown below the parent link */
+          left: 0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: #fefefe; /* Dark background for visibility */
+          border-radius: 5px;
+          box-shadow: 0px 8px 16px rgb(255, 255, 255); /* Adds shadow for a floating effect */
+      }
+
+      /* Show the dropdown when hovering over the parent list item */
+      header ul li:hover > ul {
+          display: block;
+      }
+
+      header ul li ul li {
+          display: block; /* Stack the dropdown links vertically */
+          margin: 0;
+      }
+
+      header ul li ul li a {
+          color: rgb(255, 230, 0);
+          padding: 10px 20px;
+          font-weight: normal;
+          display: block;
+      }
+
+      header ul li ul li a:hover {
+          background-color: #555; /* Darker background on hover */
+          color: yellow;
+      }
+
+      /* Adjust the container to prevent it from being hidden behind the fixed header */
+      .container {
+          padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
+      }
+
+      h1, h2, h3 {
+          margin-top: 40px;
+      }
+      section {
+          margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with navigation buttons -->
+    <header>
+      <ul>
+          <!-- Dropdown Menu Example -->
+          <li>
+              <a href="#"><strong>MENU</strong></a>
+              <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="breakfast.html">BREAKFAST</a></li>
+          <li><a href="signature_heros.html">SIGNATURE HEROS</a></li>
+          <li><a href="signature_wraps.html">SIGNATURE WRAPS</a></li>
+          <li><a href="paninis.html">PANINIS</a></li>
+          <li><a href="grill.html">GRILL</a></li>
+          <li><a href="deli_counter.html">DELI COUNTER</a></li>
+          <li><a href="salad.html">SALAD BAR</a></li>
+          <li><a href="acai_smoothie.html">ACAI & SMOOTHIES</a></li>
+          <li><a href="catering_menu.html"><strong>CATERING MENU</strong></a></li>
+              </ul>
+          </li>
+      </ul>
+    </header>
+    <div class="container">
+      <h1>SIGNATURE HEROES: $12.99</h1>
+      <p>Available on Italian Bread, Whole Wheat</p>
+
+      <!-- Signature Heroes Section -->
+      <div class="section">
+        <h2 class="section-title">Signature Heroes</h2>
+        <p><strong>CEDAR BEACH:</strong> CHICKEN CUTLET, CHEDDAR, BACON + BBQ</p>
+        <p><strong>ROCKAWAY BEACH:</strong> CHICKEN CUTLET, MOZZARELLA, BACON, COLE SLAW + RUSSIAN ON GARLIC TOASTED HERO</p>
+        <p><strong>DAVIS PARK:</strong> ROAST BEEF, CHEDDAR, PICKLE, LETTUCE + HORSERADISH DRESSING</p>
+        <p><strong>CUPSOGUE:</strong> TURKEY, AVOCADO, BACON, LETTUCE, TOMATO + SPICY MAYO</p>
+        <p><strong>GIN BEACH:</strong> GRILLED CHICKEN, PROVOLONE, LETTUCE, TOMATO, ONION + PESTO ON GARLIC TOASTED HERO</p>
+        <p><strong>FLYING POINT:</strong> GRILLED CHICKEN, FRESH MOZZARELLA, BACON, POTATO SALAD + MUSTARD</p>
+        <p><strong>WADING RIVER:</strong> THOUSAND ISLAND ON WHOLE WHEAT GARLIC TOASTED HERO</p>
+        <p><strong>REEVES BEACH:</strong> ROAST BEEF, MOZZARELLA ON TOASTED GARLIC HERO</p>
+        <p><strong>POINT LOOKOUT:</strong> HAM SLICED THIN, SWISS, COLE SLAW ON WHOLE WHEAT HERO</p>
+        <p><strong>LIDO BEACH:</strong> CHICKEN CUTLET, FRESH MOZZARELLA, MARINARA</p>
+        <p><strong>ROBERT MOSES:</strong> TURKEY, AMERICAN, BACON, LETTUCE + MAYONNAISE</p>
+        <p><strong>JONES BEACH:</strong> HAM CAPPY, SALAMI, PEPPERONI, PROVOLONE, LETTUCE, TOMATO, ONION, OIL + VINEGAR</p>
+        <p><strong>GILGO BEACH:</strong> GRILLED CHICKEN, BACON, CUCUMBER + RANCH ON HONEY MUSTARD GARLIC BREAD</p>
+        <p><strong>TOBAY BEACH:</strong> TURKEY, PASTRAMI, PEPPER JACK, LETTUCE, TOMATO + HONEY</p>
+        <p><strong>ROAST BEEF:</strong> TURKEY, BACON + GRAVY, ON GARLIC BREAD</p>
+        <p><strong>EL POLLO LOCO:</strong> GRILLED CHICKEN, PEPPER JACK, BACON, CUCUMBER, RED ONION, BUFFALO SAUCE + RANCH</p>
+        <p><strong>PICKLE BACK:</strong> OVEN ROASTED TURKEY, MUENSTER CHEESE, TOMATO, FRIED PICKLES + SPICY MAYO</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast - Town & Country Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Remove the gray background from the header */
+      header {
+          position: fixed; /* Fixes the header at the top */
+          top: 0; /* Aligns it to the top of the page */
+          left: 0;
+          width: 100%; /* Ensures the header spans the full width */
+          z-index: 1000; /* Makes sure the header stays on top of other content */
+          background-color: transparent; /* Make the background transparent */
+          padding: 10px 0;
+      }
+      /* Style for the navigation list */
+      header ul {
+          list-style-type: none; /* Remove the default list styling */
+          padding: 0;
+          margin: 0;
+          text-align: left;
+      }
+      header ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative; /* Needed for dropdown positioning */
+      }
+      header ul li a {
+          color: white; /* Set the text color to white */
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          display: block;
+      }
+      header ul li a:hover {
+          background-color: #f1f1f1; /* Light background on hover */
+          color: black; /* Change text color to black on hover */
+          border-radius: 5px;
+      }
+
+      /* Dropdown menu styling */
+      header ul li ul {
+          display: none; /* Hide the dropdown initially */
+          position: absolute;
+          top: 100%; /* Position dropdown below the parent link */
+          left: 0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: #fefefe; /* Dark background for visibility */
+          border-radius: 5px;
+          box-shadow: 0px 8px 16px rgb(255, 255, 255); /* Adds shadow for a floating effect */
+      }
+
+      /* Show the dropdown when hovering over the parent list item */
+      header ul li:hover > ul {
+          display: block;
+      }
+
+      header ul li ul li {
+          display: block; /* Stack the dropdown links vertically */
+          margin: 0;
+      }
+
+      header ul li ul li a {
+          color: rgb(255, 230, 0);
+          padding: 10px 20px;
+          font-weight: normal;
+          display: block;
+      }
+
+      header ul li ul li a:hover {
+          background-color: #555; /* Darker background on hover */
+          color: white;
+      }
+
+
+      /* Adjust the container to prevent it from being hidden behind the fixed header */
+      .container {
+          padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
+      }
+
+      h1, h2, h3 {
+          margin-top: 40px;
+      }
+      section {
+          margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with navigation buttons -->
+    <header>
+      <ul>
+          <!-- Dropdown Menu Example -->
+          <li>
+              <a href="#"><strong style="color:gold">MENU</strong></a>
+              <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="breakfast.html">BREAKFAST</a></li>
+          <li><a href="signature_heros.html">SIGNATURE HEROS</a></li>
+          <li><a href="signature_wraps.html">SIGNATURE WRAPS</a></li>
+          <li><a href="paninis.html">PANINIS</a></li>
+          <li><a href="grill.html">GRILL</a></li>
+          <li><a href="deli_counter.html">DELI COUNTER</a></li>
+          <li><a href="salad.html">SALAD BAR</a></li>
+          <li><a href="acai_smoothie.html">ACAI & SMOOTHIES</a></li>
+          <li><a href="catering_menu.html"><strong>CATERING MENU</strong></a></li>
+              </ul>
+          </li>
+      </ul>
+    </header>
+    <div class="container">
+      <h2 style="color: gold">HOME</h2>
+        <!-- Store Information Section -->
+        <h1>Town & Country Market</h1>
+        <p>85 North Country Road | Miller Place</p>
+        <p> 631-403-4383 |  631-403-4382</p>
+        <p><strong>Store Hours:</strong></p>
+        <p>Monday-Saturday: 5:30 AM - 4:00 PM</p>
+        <p>Sunday: 5:30 AM - 4:00 PM</p>
+      <p>
+
+        
+      </p>
+      <div class="container">
+      <p style="color:gold"><em>
+        Town & Country Market, located at 85 N Country Rd, Miller Place, NY, has long been a beloved institution in the community. 
+      As one of the area's earlier establishments, it has earned a reputation for being a cornerstone of local life, serving both 
+      the everyday needs of the residents and providing a welcoming spot for delicious food and exceptional service.
+        
+        Known for its top-quality deli meats, Town & Country Market proudly serves Boar's Head products, ensuring customers receive only the finest cuts available. 
+      Whether you're stopping by for breakfast, grabbing lunch on the go, or ordering dinner, their menu offers a wide range of hearty sandwiches, soups, 
+      fresh salads, and more. In addition to the extensive deli options, the market also carries an array of grocery items, making it a convenient 
+      stop for all your everyday needs.
+        
+        The market has expanded its offerings over the years, providing catering services for all occasions, from family gatherings to special events. 
+      Free delivery and curbside pickup options make it even easier for busy customers to enjoy the market's high-quality food. 
+        
+        With its long history in Miller Place, Town & Country Market remains a local favorite, continuing to serve its community with great pride and dedication. 
+      Whether you're a long-time regular or a newcomer, you'll always feel like part of the family at this timeless neighborhood gem.
+      </em></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acai & Smoothie - Town & Country Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Remove the gray background from the header */
+      header {
+          position: fixed; /* Fixes the header at the top */
+          top: 0; /* Aligns it to the top of the page */
+          left: 0;
+          width: 100%; /* Ensures the header spans the full width */
+          z-index: 1000; /* Makes sure the header stays on top of other content */
+          background-color: transparent; /* Make the background transparent */
+          padding: 10px 0;
+      }
+      /* Style for the navigation list */
+      header ul {
+          list-style-type: none; /* Remove the default list styling */
+          padding: 0;
+          margin: 0;
+          text-align: left;
+      }
+      header ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative; /* Needed for dropdown positioning */
+      }
+      header ul li a {
+          color: rgb(255, 247, 0); /* Set the text color to white */
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          display: block;
+      }
+      header ul li a:hover {
+          background-color: #f1f1f1; /* Light background on hover */
+          color: black; /* Change text color to black on hover */
+          border-radius: 5px;
+      }
+
+      /* Dropdown menu styling */
+      header ul li ul {
+          display: none; /* Hide the dropdown initially */
+          position: absolute;
+          top: 100%; /* Position dropdown below the parent link */
+          left: 0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: #333; /* Dark background for visibility */
+          border-radius: 5px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for a floating effect */
+      }
+
+      /* Show the dropdown when hovering over the parent list item */
+      header ul li:hover > ul {
+          display: block;
+      }
+
+      header ul li ul li {
+          display: block; /* Stack the dropdown links vertically */
+          margin: 0;
+      }
+
+      header ul li ul li a {
+          color: rgb(255, 247, 0);
+          padding: 10px 20px;
+          font-weight: normal;
+          display: block;
+      }
+
+      header ul li ul li a:hover {
+          background-color: #555; /* Darker background on hover */
+          color: white;
+      }
+
+      /* Adjust the container to prevent it from being hidden behind the fixed header */
+      .container {
+          padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
+      }
+
+      h1, h2, h3 {
+          margin-top: 40px;
+      }
+      section {
+          margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with navigation buttons -->
+    <header>
+      <ul>
+          <!-- Dropdown Menu Example -->
+          <li>
+              <a href="#"><strong>MENU</strong></a>
+              <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="breakfast.html">BREAKFAST</a></li>
+          <li><a href="signature_heros.html">SIGNATURE HEROS</a></li>
+          <li><a href="signature_wraps.html">SIGNATURE WRAPS</a></li>
+          <li><a href="paninis.html">PANINIS</a></li>
+          <li><a href="grill.html">GRILL</a></li>
+          <li><a href="deli_counter.html">DELI COUNTER</a></li>
+          <li><a href="salad.html">SALAD BAR</a></li>
+          <li><a href="acai_smoothie.html">ACAI & SMOOTHIES</a></li>
+          <li><a href="catering_menu.html"><strong>CATERING MENU</strong></a></li>
+              </ul>
+          </li>
+      </ul>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>ACAI BOWLS AND SMOOTHIES</h1>
+
+        <!-- Acai Bowls Section -->
+        <section id="acai-bowls">
+            <h2>Acai Bowls</h2>
+            <p>Small: $8.99 | Large: $12.45</p>
+            <p>One of the most delicious members of the "superfood" squad - the acai berry is native to Central and South America. Acai is loaded with antioxidants and fiber, boosting the immune system and overall health. Acai bowls are a cross between a smoothie and sorbet, topped with your favorite garnishes.</p>
+
+            <h3>Bowls</h3>
+            <p><strong>TRADITIONAL BOWL:</strong> Acai topped with honey granola, banana, strawberry, blueberry, coconut, and honey
+            </p>
+              
+            <p>
+
+              
+            </p>
+            <p><strong>PROTEIN BOWL:</strong> Acai topped with vanilla granola, peanut butter, banana, strawberry, chia seeds, and honey
+            
+            </p>
+            <p><strong>BOWLDAK YELLOW:</strong> Acai topped with honey granola, banana, mango, pineapple, coconut, and honey
+            
+            </p>
+            <p><strong>DRAGON BOWL Z:</strong> Acai topped with vanilla granola, Nutella, raspberry, blueberry, strawberry, coconut, and honey
+            
+            </p>
+        </section>
+
+        <!-- Smoothies Section -->
+        <section id="smoothies">
+            <h2>Smoothies</h2>
+            <p>Small: $8.99 | Large: $10.99</p>
+
+            <h3>Smoothie Flavors</h3>
+            <p><strong>TRADITIONAL:</strong> Acai, apple juice, banana, strawberry, blueberry, coconut</p>
+            <p><strong>PROTEIN:</strong> Acai, almond milk, peanut butter, banana, strawberry, chia seeds</p>
+            <p><strong>KALE YALE:</strong> Acai, apple juice, kale, spinach, banana, pineapple, blueberry</p>
+            <p><strong>BERRY BABE:</strong> Acai, almond milk, banana, strawberry, blueberry, raspberry</p>
+        </section>
+
+        <!-- Extras Section -->
+        <section id="extras">
+            <h2>Extras - $0.99 Each</h2>
+            <p>Chia seeds, almond slices, chocolate chips, peanut butter, almond butter, cookie butter, pineapple, blueberries, mango, banana, strawberries, watermelon, agave, Nutella, flax seed, coconut flakes</p>
+        </section>
+
+    </div>
+    </div>
+  </body>
+</html>
+

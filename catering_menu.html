@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catering Menu - Town & Country Market</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Header styling (same as your original file) */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: transparent;
+      padding: 10px 0;
+    }
+    header ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+    header ul li {
+      display: inline-block;
+      margin: 0 15px;
+      position: relative; /* For dropdown positioning */
+    }
+    header ul li a {
+      color: Yellow;
+      text-decoration: none;
+      padding: 16px 28px;
+      font-weight: bold;
+      display: block;
+    }
+    header ul li a:hover {
+      background-color: #f1f1f1;
+      color: black;
+      border-radius: 5px;
+    }
+    /* Dropdown Menu styling */
+    header ul li ul {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #333;
+      padding: 0;
+      list-style-type: none;
+      min-width: 150px;
+    }
+    header ul li:hover > ul {
+      display: block;
+    }
+    header ul li ul li {
+      display: block;
+      margin: 0;
+    }
+    header ul li ul li a {
+      color: Yellow;
+      padding: 10px;
+    }
+    header ul li ul li a:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+    /* Container styling */
+    .container {
+      padding: 80px 20px 20px; /* Top padding accounts for the fixed header */
+    }
+    h1, h2, h3, h4 {
+      margin-top: 40px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    ul {
+      margin: 0 0 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with dropdown navigation (matches your original structure) -->
+  <header>
+    <ul>
+      <li>
+        <a href="#"><strong>MENU</strong></a>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="breakfast.html">BREAKFAST</a></li>
+          <li><a href="signature_heros.html">SIGNATURE HEROS</a></li>
+          <li><a href="signature_wraps.html">SIGNATURE WRAPS</a></li>
+          <li><a href="paninis.html">PANINIS</a></li>
+          <li><a href="grill.html">GRILL</a></li>
+          <li><a href="deli_counter.html">DELI COUNTER</a></li>
+          <li><a href="salad.html">SALAD BAR</a></li>
+          <li><a href="acai_smoothie.html">ACAI & SMOOTHIES</a></li>
+          <li><a href="catering_menu.html"><strong>CATERING MENU</strong></a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <div class="container">
+        <!-- Town and  Country Market Catering Details -->
+    <section id="town-country">
+      <h1>Town and Country Market Catering</h1>
+      <p style="color: rgb(255, 213, 0);">85 NORTH COUNTRY ROAD, MILLER PLACE</p>
+      <p style="color: rgb(255, 213, 0);">P: 631-403-4383 | F: 631-403-4382</p>
+    <h2 style="color: rgb(255, 213, 0);">CATERING MENU</h2>
+
+    <!-- Backyard BBQ Section -->
+    <!--<section id="backyard-bbq">
+      <h2>Backyard BBQ - $22.99 Per Person</h2>
+      <p><em>Grill Equipment + Chef Included (4 hours) | (20 Person Minimum)</em></p>
+      <p><strong>Package Includes:</strong> Paper Goods, Serving Utensils, Dressings, Rolls + Butter<br>
+         <em>Orders Must Be Placed At Least 2 Days In Advance</em></p>
+      <h3>BBQ Items:</h3>
+      <p>Hamburgers, Veggie Burgers, Hot Dogs, Sausage + Grilled Chicken</p>
+      <h3>Gourmet Items:</h3>
+      <ul>
+        <li>+ $3.99 Per Selection/Per Person:
+          <ul>
+            <li>Steak or Chicken Kabobs</li>
+            <li>Baby Back Ribs</li>
+          </ul>
+        </li>
+        <li>+ $4.99 Per Selection/Per Person:
+          <ul>
+            <li>Skirt Steak, Shell Steak</li>
+            <li>Salmon</li>
+          </ul>
+        </li>
+        <li>+ $7.99 Per Selection/Per Person:
+          <ul>
+            <li>Filet Mignon, Lobster Tails</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Salads & Sides:</h3>
+      <p><strong>Green Salad (Choice of 1):</strong> Garden Salad, Spring Mix Salad, Caesar Salad, Greek Salad</p>
+      <p><strong>Side Dishes (Choice of 4):</strong> Corn on the Cob, Macaroni + Cheese, Balsamic Grilled Vegetables, Baked Beans, Potato Salad, Macaroni Salad, Cole Slaw, Penne Mozzarella Tomato + Basil Salad</p>
+      <p><strong>Dessert:</strong> Sliced Watermelon or Fruit Salad</p>
+    </section> --
+      <h3>BREAKFAST</h3>
+      <h4>CONTINENTAL BUFFET: - $12.99 Per Person</h4>
+      <p><em>(15 Person Minimum)</em></p>
+      <p>An Assortment of Fresh Baked Bagels, Danish, Muffins + Fruit Salad</p>
+      <p>Beverages: Coffee or Tea, Orange Juice</p>
+      <p>Accompaniments: Cream Cheese, Butter + Jam</p>
+      <p>Includes: Plastic and Paperware</p>
+      
+      <h4>HOT BREAKFAST BUFFET: - $14.99 Per Person</h4>
+      <p><em>(15 Person Minimum)</em></p>
+      <p>Choose from Fresh Pancakes or French Toast, Scrambled Eggs, Bacon or Sausage, Home Fries, Bagels</p>
+      <p>Beverages: Coffee or Tea,  Orange Juice</p>
+      <p>Accompaniments: Cream Cheese + Butter</p>
+      <p>Includes: Condiments, Plastic and Paperware</p>
+
+      <-- Specialty Items Section -->
+    <section id="specialty-items">
+      <h2 style="color: rgb(255, 213, 0);"><strong>PARTY HEROS: 3ft. to 6ft.</strong></h2>
+      <h4>CLASSIC PARTY HEROS - $24.99 Per Ft.</h4>
+      <p>Includes side salads: Potato, Macaroni, Cold Slaw</p>
+      <p>AMERICAN: Roast Beef, Ham, Turkey, American, Lettuce + Tomato</p>
+      <p>Mustard + Mayonnaise</p>
+      <p>
+      </p>
+      <p>ITALIAN: Genoa Salami, Pepperonni, Capicola Ham, Provolone, Lettuce, Tomato</p>
+      <p>Italian Derssing</p>
+      
+      <h3 style="color: rgb(255, 213, 0);">SPECIALTY PARTY HEROS - $26.99 Per Ft.</h3>
+      <p>Includes side salads: Potato, Macaroni, Cold Slaw</p>
+      <h3 style="color: rgb(255, 213, 0);">SPECIALTY ITEMS</h3>
+      <ul>
+        <li><strong>Caprese:</strong> Grilled Chicken, Fresh Mozzarella, Roasted Red Peppers + Balsamic Dressing</li>
+        <li><strong>Wild Buffalo:</strong> Sliced Buffalo Chicken Cutlet, Pepper Jack Cheese, Shredded Lettuce, and Blue Cheese or Ranch Dressing</li>
+        <li><strong>Cedar Beach:</strong> Chicken Cutlet, Bacon, Cheddar + BBQ Sauce</li>
+        <li><strong>Gilgo Beach:</strong> Honey Mustard Garlic Bread Hero, Grilled Chicken, Bacon, Sliced Cucumber + Ranch Dressing</li>
+        <li><strong>Grilled Vegetable:</strong> Eggplant, Zucchini, Red Onions, Peppers, Carrots, Fresh Mozzarella + Balsamic Reduction</li>
+        <li><strong>Teriyaki London Broil:</strong> (*$29.99 per foot) Sliced London Broil, Fresh Mozzarella + Teriyaki</li>
+        
+          
+        <h3><strong style="color: rgb(255, 213, 0);">PARTY PLATTER FAVORITES:</strong></h3>
+        <strong>
+          <li>SMALL: 12" Round(8-10 people)</li>
+          <li>MEDIUM: 16" Round(12-16 people)</li>
+          <li>LARGE: 18" Round (18-24 people)</li>
+          <ul>
+            <h4><strong style="color: rgb(255, 213, 0);">GOURMET WRAPS PLATTERS: Small- $65.00, Medium-$130.00, Large-$175.00</strong>
+            <li> Choices of Signature wraps: Mecox Beach, Meschutt, Main Beach, Montauk Point, Long Beach, Orient Point,Ocean Beach, Smiths Point, Ditch Plains,Overlook Beach, Short Beach,Hither Hills,Capri,Tuna Salad wraps, Chicken Salad Wrap, Egg Salad. All wraps cut in half</li>  
+            <h4><strong style="color: rgb(255, 213, 0);">VEGETABLE PLATTER: Small - $45.00, Medium - $75.00, Large - $110.00</strong>
+            <li> Assorted fresh garden vegetables: sweet red and green peppers, celery, baby carrots, grape tomatoes, broccoli, zucchini, cucumber + buttermilk ranch dip</li>
+
+             <h4><strong style="color: rgb(255, 213, 0);">GOURMET CHEESE AND CRACKER PLATTER: Small - $65.00, Medium - $85.00, Large - $120.00</strong></h4>
+            <li> Assorted gourmet cheese: vermont aged cheddar, monterey jack, horseraddish cheddar, swiss cheese, smoked gouda - garnished with red and green pepper with crackers.
+            </li>
+            
+            <h4><strong style="color: rgb(255, 213, 0);">ITALIAN MEAT + CHEESE ANTIPASTA PLATTER:Small - $75.00, Medium - $95.00, Large - $130.00</strong></h4>
+            <li>Pepperoni, genoa salami, prosciutto fi parma, provolone, fresh mozzarella - garnished with roasted red peppers, olives with crackers.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+      
+    <!-- Grilled Panini Buffet Section -->
+    <section id="grilled-panini">
+      <h3 style="color: rgb(255, 213, 0);">GRILLED PANINI BUFFET - $12.99 Per Person</h3>
+      <p><em>(15 Person Minimum)</em></p>
+      <h3 style="color: rgb(255, 213, 0);">Assorted Gourmet Panini's:</h3>
+      <ul>
+        <li>EVERROAST CHICKEN, FRESH MOZZARELLA, ROASTED PEPPERS + PESTO</li>
+        <li>HONEY MAPLE TURKEY, SMOKED GOUDA CHEESE, BACON + HONEY MUSTARD</li>
+        <li>BUFFALO CHICKEN, PEPPER JACK, CUCUMBER + RANCH</li>
+        <li>VIRGINIA HAM, WHITE AMERICAN, PICKLE, BACON + HONEY MUSTARD</li>
+        <li>CRACKED PEPPERCORN TURKEY, MUENSTER, BACON, ROASTED PEPPERS + RUSSIAN</li>
+        <li>ROAST BEEF, CHEDDAR, GRILLED ONIONS + BBQ SAUCE, GARLIC BREAD PANINI</li>
+        <li>SLICED CHICKEN, MONTEREY JACK, RED ONION, BACON + RANCH</li>
+        <li>BALSAMIC GRILLED VEGETABLES + FRESH MOZZARELLA</li>
+        <li>CHICKEN CUTLET, HOT SAUCE, PEPPER JACK CHEESE, BLUE CHEESE DRESSING</li>
+      </ul>
+      <h3 style="color: rgb(255, 213, 0);">Salads:</h3>
+      <p><strong>Side Salads (Choice of 2):</strong> Macaroni, Potato, Cole Slaw, Cucumber Salad, Tomato Mozzarella Salad</p>
+      <p><strong>Green Salad (Choice of 1):</strong> Garden Salad, Greek Salad, Caesar Salad, Spring Mix Salad</p>
+      <h3>Package Includes:</h3>
+      <p>Paper Goods, Serving Utensils, Condiments</p>
+    </section>
+
+    <!-- Hot Gourmet Buffet Section -->
+    <section id="hot-gourmet">
+      <h3 style="color: rgb(255, 213, 0);">GOURMET BUFFET - $24.99 Per Person</h3>
+      <p><em>(20 Person Minimum)</em></p>
+      <h3 style="color: rgb(255, 213, 0);">Entrees (Choice of 3):</h3>
+      <p>Eggplant Parmigiana, Chicken Erancese, Chicken Marsala, Asian Skirt Steak, Asparagus & Swiss Stuffed Chicken in Bourbon Reduction, Sesame Chicken, Sausage & Peppers, Penne Alla Vodka, Baked Ziti</p>
+      <h3 style="color: rgb(255, 213, 0);">Side Dishes (Choice of 2):</h3>
+      <p>Rosemary Potatoes, Mashed Potatoes, Balsamic Grilled Vegetables, Steamed Broccoli, String Beans Almondine, Sautéed Asparagus, Penne, Egg Noodles, White Rice, Rice Pilaf</p>
+      <h3 style="color: rgb(255, 213, 0);">Green Salad (Choice of 1):</h3>
+      <p>Garden Salad, Greek Salad, Caesar Salad, Spring Mix Salad</p>
+    </section>
+      
+    <!-- Catering Packages Section -->
+    <section id="catering-packages">
+      <h2 style="color: rgb(255, 213, 0);"><strong>CATERING PACKAGE</strong></h2>
+      
+      <h3 style="color: rgb(255, 213, 0);">COLD CUT PLATTER: </h3>
+      <p>Small (8-10 People) $75.00</p> Medium (12-16 people) $120.00 | Large (18-24 People) $180.00 </p>
+      <p>Elegantly Arranged Platter of Roast Beef, Turkey, Ham, Genoa Salami, American, Swiss Cheese and Provolone</p>
+      <p><strong>Salads:</strong> Choice of 2 Side Salads: Macaroni, Potato, Cole Slaw, Cucumber Salad, Penne Pasta Salad, Health Salad, Tomato Mozzarella Salad, and 1 Green Salad (Garden, Greek, Caesar, Spring Mix)</p>
+      <p>Basket of Rolls, White Bread, Rye bread, Whole Wheat Bread with Garnish: Lettuce, Tomato, Onion, Roasted Peppers, Pickles</p>
+      <p>Package Includes: Paper Goods, Serving Utensils, Condiments</p>
+      
+      <h3 style="color: rgb(255, 213, 0);">BUFFET:  $12.99 per person, (15 Person Minimum)</h3>
+      <p>Choice of 5 Assorted Specialty Sandwiches on Whole Wheat, Spinach, Tomato Basil & Plain Wraps:</p>
+      <ul>
+        <li>Grilled Vegetable with Fresh Mozzarella</li>
+        <li>Almond Chicken Salad</li>
+        <li>Turkey with American</li>
+        <li>Ham and Swiss</li>
+        <li>Buffalo Chicken</li>
+        <li>Egg Salad</li>
+        <li>Tuna Salad</li>
+        <li>Grilled Chicken Caesar</li>
+        <li>Roast Beef with Cheddar</li>
+        <li>Grilled Chicken Roasted Peppers + Mozzarella</li>
+        <p><strong>Salads:</strong> Choice of 2 Side Salads: Macaroni, Potato, Cole Slaw, Cucumber Salad, Penne Pasta Salad, Health Salad, Tomato Mozzarella Salad) and 1 Green Salad (Garden, Greek, Caesar, Spring Mix)</p>      </ul>
+    </section>
+
+    <!-- Catering A LA carte section -->
+    <section id="catering-a-la-carte">
+      <h2 style="color: rgb(255, 213, 0);">CATERING A LA CARTE:</h2>
+
+      <h3 style="color: rgb(255, 213, 0);"> HORS D’OEUVRES:</h3>
+
+<li>Waffle Fries				    	Half $49.99		Full $69.99</li>
+<li>Pigs In A Blanket			  	Half $49.99		Full $79.99</li>
+<li>Mozzarella Sticks			  	Half $34.99		Full $64.99</li>
+<li>Rice Balls				      	Half $35.99		Full $69.99</li>
+<li>Fried Ravioli				    	Half $35.99		Full $69.99</li>
+<li>Stuffed Peppers			    	Half $39.99		Full $69.99</li>
+<li>Buffalo Wings (Hot, BBQ, Honey)		Half $35.99		Full $79.99</li>
+<li>Stuffed Mushrooms				  Half $35.99		Full $69.99</li>
+<li>Macaroni + Cheese			  	Half $35.99		Full $69.99</li>
+<li>Chicken Fingers			    	Half $39.99		Full $69.99	</li>
+<li>Baked Clams					      Half $39.99		Full $69.99</li>
+<li>Mini Quiche					      Half $35.99		Full $69.99</li>
+<li>Maryland Crab Cakes				Half $49.99		Full $89.99</li>
+<li>Coconut Shrimp				    Half $59.99		Full $109.99</li>
+ 
+<h3 style="color: rgb(255, 213, 0);">GREEN SALADS:</h3>
+
+<li>Garden					Half $39.99		Full $59.99</li>
+<li>Caesar			    Half $39.99		Full $59.99</li>
+<li>Greek						Half $39.99		Full $64.99</li>
+<li>Chefs						Half $49.99		Full $69.99</li>
+<li>Spring Mix			Half $39.99		Full $59.99</li>
+<li>(Mesclun Greens, Craisins, Walnuts, Crumbled Blue Cheese, Walnuts)</li>
+<li>Kale Caesar Salad                                                Half $49.99                   Full $79.99</li>
+<li>(Kale, Shaved Green Apple, Candied Walnuts, Creamy Caesar Dressing)</li>
+
+<h3 style="color: rgb(255, 213, 0);">SIDE DISHES:</h3>
+
+<li>Rosemary Roasted Potatoes			Half $ 59.99		Full $79.99</li>
+<li>Mashed Potatoes				Half $59.99		Full $79.99	</li>
+<li>Garlic Mashed Potatoes			Half $59.99		Full $79.99</li>
+<li>Balsamic Grilled Vegetables			Half $59.99		Full $79.99</li>
+<li>Steamed Broccoli				Half $59.99		Full $79.99</li>
+<li>String Beans Almondine			Half $59.99		Full $79.99</li>
+<li>Sautéed Asparagus				Half $59.99		Full $79.99</li>
+<li>Sautéed Spinach				Half $59.99		Full $79.99</li>
+<li>Rice Pilaf					Half $49.99		Full $69.99</li>
+
+
+
+
+      
+    <!-- Entrées Section -->
+    <section id="entrees">
+      <h2 style="color: rgb(255, 213, 0);">Entrées</h2>
+      
+      <h3 style="color: rgb(255, 213, 0);">CHICKEN</h3>
+      <ul>
+        <li>Chicken Parmigiana: Half $79.99, Full $129.99</li>
+        <li>Chicken Marsala: Half $79.99, Full $129.99</li>
+        <li>Chicken Francese: Half $79.99, Full $129.99</li>
+        <li>Chicken Cordon Bleu: Half $79.99, Full $129.99</li>
+        <li>Chicken Asparagus + Swiss: Half $79.99, Full $129.99</li>
+        <li>Hawaiian Chicken: Half $79.99, Full $129.99</li>
+        <li>Sesame Chicken: Half $79.99, Full $129.99</li>
+        <li>General Tso's Chicken: Half $79.99, Full $129.99</li>
+        <li>Chicken Teriyaki + Vegetables: Half $79.99, Full $129.99</li>
+        <li>Roasted Chicken: Half $79.99, Full $129.99</li>
+        <li>Fried Chicken: Half $79.99, Full $129.99</li>
+        <li>Cajun Grilled Chicken + Vegetables: Half $79.99, Full $129.99</li>
+      </ul>
+      
+      <h3 style="color: rgb(255, 213, 0);">BEEF</h3>
+      <ul>
+        <li>BBQ Beef + Sautéed Onions: Half $89.99, Full $149.99</li>
+        <li>Pepper Steak, Peppers + Onions: Half $89.99, Full $149.99</li>
+        <li>Asian Beef + Broccoli: Half $89.99, Full $149.99</li>
+        <li>London Broil + Sautéed Onions: Half $89.99, Full $149.99</li>
+        <li>Asian Skirt Steak: Half $89.99, Full $149.99</li>
+        <li>Sausage + Peppers: Half $89.99, Full $149.99</li>
+        <li>Swedish Meatballs + Noodles: Half $89.99, Full $149.99</li>
+        <li>Meatball Parmigiana: Half $89.99, Full $149.99</li>
+      </ul>
+      
+      <h3 style="color: rgb(255, 213, 0);">SEAFOOD</h3>
+      <ul>
+        <li>Stuffed Flounder: Half $89.99, Full $149.99</li>
+        <li>Stuffed Shrimp: Half $89.99, Full $149.99</li>
+        <li>Shrimp Scampi: Half $89.99, Full $149.99</li>
+        <li>Shrimp Parmigiana: Half $89.99, Full $149.99</li>
+        <li>Fried Shrimp: Half $89.99, Full $149.99</li>
+        <li>Cajun Halibut: Half $89.99, Full $149.99</li>
+      </ul>
+      
+      <h3 style="color: rgb(255, 213, 0);">EGG PLANT</h3>
+      <ul>
+        <li>Eggplant Parmigiana: Half $69.99, Full $89.99</li>
+        <li>Eggplant Rollatini: Half $69.99, Full $89.99</li>
+      </ul>
+    </section>
+
+       <!-- Pasta Section -->
+    <section id="pasta">
+      <h3 style="color: rgb(255, 213, 0);">PASTA</h3>
+      <ul>
+        <li><strong>Baked Ziti:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Penne a la Vodka:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Linguini with White Clam Sauce:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Penne, Chicken, Broccoli, Garlic + Oil:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Fettuccini Alfredo:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Pasta Bolognese:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Pasta Primavera:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Baked Stuffed Shells:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Baked Ravioli (Meat or Cheese):</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Baked Manicotti:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Lasagna:</strong> Half $69.99, Full $89.99</li>
+        <li><strong>Vegetable Lasagna:</strong> Half $69.99, Full $89.99</li>
+      </ul>
+    </section>
+
+      <p>
+
+        
+      </p>
+      <p>
+
+        
+      </p>
+      <p>*This menu item is prepared to order and may contain raw or undercooked meat, seafood, shellfish, or fresh shell eggs. Consuming raw or undercooked foods may increase your risk of foodborne illness, particularly if you have a weakened immune system, are pregnant, elderly, or have certain medical conditions. If you have any concerns, please consult your physician before consuming.*</p>
+    </section>
+
+        <!-- Town + Country Market Catering Details -->
+    <section id="town-country">
+      <h2 style="color: rgb(255, 213, 0);">Town & Country Market Catering</h2>
+      <p style="color: rgb(255, 213, 0);">85 NORTH COUNTRY ROAD, MILLER PLACE</p>
+      <p style="color: rgb(255, 213, 0);">P: 631-403-4383 | F: 631-403-4382</p>
+      <a href=""><p style="background-color: rgb(255, 213, 0);">grubhub</a></p>
+  </div>
+</body>
+</html>

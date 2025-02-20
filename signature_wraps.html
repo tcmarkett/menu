@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakfast - Town & Country Market</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Remove the gray background from the header */
+      header {
+          position: fixed; /* Fixes the header at the top */
+          top: 0; /* Aligns it to the top of the page */
+          left: 0;
+          width: 100%; /* Ensures the header spans the full width */
+          z-index: 1000; /* Makes sure the header stays on top of other content */
+          background-color: transparent; /* Make the background transparent */
+          padding: 10px 0;
+      }
+      /* Style for the navigation list */
+      header ul {
+          list-style-type: none; /* Remove the default list styling */
+          padding: 0;
+          margin: 0;
+          text-align: left;
+
+      }
+      header ul li {
+          display: inline-block;
+          margin: 0 15px;
+          position: relative; /* Needed for dropdown positioning */
+      }
+      header ul li a {
+          color: yellow; /* Set the text color to white */
+          text-decoration: none;
+          padding: 10px 20px;
+          font-weight: bold;
+          display: block;
+      }
+      header ul li a:hover {
+          background-color: #f1f1f1; /* Light background on hover */
+          color: black; /* Change text color to black on hover */
+          border-radius: 5px;
+      }
+
+      /* Dropdown menu styling */
+      header ul li ul {
+          display: none; /* Hide the dropdown initially */
+          position: absolute;
+          top: 100%; /* Position dropdown below the parent link */
+          left: 0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          background-color: #333; /* Dark background for visibility */
+          border-radius: 5px;
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for a floating effect */
+      }
+
+      /* Show the dropdown when hovering over the parent list item */
+      header ul li:hover > ul {
+          display: block;
+      }
+
+      header ul li ul li {
+          display: block; /* Stack the dropdown links vertically */
+          margin: 0;
+      }
+
+      header ul li ul li a {
+          color: white;
+          padding: 10px 20px;
+          font-weight: normal;
+          display: block;
+      }
+
+      header ul li ul li a:hover {
+          background-color: #555; /* Darker background on hover */
+          color: yellow;
+      }
+
+      /* Adjust the container to prevent it from being hidden behind the fixed header */
+      .container {
+          padding: 80px 20px 20px; /* Adds padding to the top to accommodate the fixed header */
+      }
+
+      h1, h2, h3 {
+          margin-top: 40px;
+          text-align: left;
+      }
+      section {
+          margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with navigation buttons -->
+    <header>
+      <ul>
+          <!-- Dropdown Menu Example -->
+          <li>
+              <a href="#"><strong>MENU</strong></a>
+              <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="breakfast.html">BREAKFAST</a></li>
+          <li><a href="signature_heros.html">SIGNATURE HEROS</a></li>
+          <li><a href="signature_wraps.html">SIGNATURE WRAPS</a></li>
+          <li><a href="paninis.html">PANINIS</a></li>
+          <li><a href="grill.html">GRILL</a></li>
+          <li><a href="deli_counter.html">DELI COUNTER</a></li>
+          <li><a href="salad.html">SALAD BAR</a></li>
+          <li><a href="acai_smoothie.html">ACAI & SMOOTHIES</a></li>
+          <li><a href="catering_menu.html"><strong>CATERING MENU</strong></a></li>
+              </ul>
+          </li>
+      </ul>
+    </header>
+    <div class="container">
+      <!-- Signature Heroes Section -->
+      <div class="container">
+        <h1>SIGNATURE WRAPS</h1>
+        <p>Available on: Plain, Whole Wheat, Spinach, Tomato Basil, Garlic + Herb</p>
+  
+        <!-- Signature Wraps Section -->
+        <div class="section">
+          <h2 class="section-title">SIGNATURE WRAPS: $9.99</h2>
+          <p><strong>MEGOX BEACH:</strong> CRACKED PEPPERCORN TURKEY, MUENSTER, BACON, COLE SLAW + RUSSIAN</p>
+          <p><strong>MESCHUTT:</strong> GRILLED CHICKEN, PEPPER JACK, BACON, AVOCADO + RANCH</p>
+          <p><strong>MAIN BEACH:</strong> TURKEY, SPINACH, TOMATO, ONION, BACON & HONEY MUSTARD</p>
+          <p><strong>MONTAUK POINT:</strong> GRILLED CHICKEN, FRESH MOZZARELLA, ROASTED PEPPERS + BALSAMIC</p>
+          <p><strong>LONG BEACH:</strong> HONEY MAPLE TURKEY, MUENSTER, LETTUCE, TOMATO + HONEY MUSTARD</p>
+          <p><strong>ORIENT POINT:</strong> ROAST BEEF, CHEDDAR, RED ONION, ROASTED PEPPERS, BBQ SAUCE</p>
+          <p><strong>OCEAN BEACH:</strong> BUFFALO CHICKEN, MONTEREY JACK, SLICED CUCUMBER + RANCH</p>
+          <p><strong>SMITHS POINT:</strong> CHICKEN CUTLET, BACON, SWISS + RANCH</p>
+          <p><strong>DITCH PLAINS:</strong> HOT PASTRAMI, TURKEY, BACON, LETTUCE, TOMATO + THOUSAND ISLAND</p>
+          <p><strong>OVERLOOK BEACH:</strong> HONEY MAPLE TURKEY, CRANBERRIES, LETTUCE, BRIE, HONEY MUSTARD</p>
+          <p><strong>SHORT BEACH:</strong> TERIYAKI GRILLED CHICKEN, SLICED CUCUMBER, LETTUCE + THAI PEANUT SAUCE</p>
+          <p><strong>IRON PIER:</strong> ROAST BEEF, CRUMBLED BLUE, GRILLED ONION, LETTUCE + HORSERADISH SAUCE</p>
+          <p><strong>HITHER HILLS:</strong> SLICED GRILLED CHICKEN, ROMAINE LETTUCE, PARMESAN + CAESAR DRESSING</p>
+  
+          <h2 class="section-title">On the Healthy Side</h2>
+          <p><strong>COPACABANA WRAP - $10.99:</strong> GRILLED CHICKEN, SPINACH, ROASTED PEPPERS, ALPINE LACE SWISS, AVOCADO & BALSAMIC</p>
+          <p><strong>WAIKIKI - $9.99:</strong> ALMOND CHICKEN SALAD IN A LEAF LETTUCE WRAP</p>
+          <p><strong>BOTTOM BAY WRAP - $9.99:</strong> SPINACH, SHREDDED CARROTS, RED ONION, TOMATO, ROASTED PEPPERS + BALSAMIC</p>
+          <p><strong>VENICE BEACH - $9.99:</strong> CRACKED PEPPERCORN TURKEY, ROASTED PEPPERS, SPICY MUSTARD IN A LEAF LETTUCE WRAP</p>
+          <p><strong>CAPRI WRAP - $7.99 / WITH FRESH MOZZARELLA $8.99:</strong> BALSAMIC GRILLED ZUCCHINI + ONIONS</p>
+          <p><strong>MAYA BAY - $10.99:</strong> SLICED GRILLED CHICKEN IN A LETTUCE WRAP</p>
+          <p><strong>GRACE BAY HERO - $10.99:</strong> VIRGINIA HAM, RED ONION, LETTUCE, BRIE + LIGHT RANCH ON A WHOLE WHEAT HERO</p>
+        </div>
+      </div>
+    </body>
+  </html>
