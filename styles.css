@@ -413,7 +413,7 @@ p:contains("DoorDash"),
     transform: none !important;
 }
 
-/* Protein Options Grid */
+/* Protein Options Grid - NO BACKGROUNDS */
 .protein-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -422,21 +422,21 @@ p:contains("DoorDash"),
 }
 
 .protein-options p {
-    background: #2a2a2a;
+    background: transparent !important;
     padding: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
     font-weight: 500;
     transition: var(--transition);
-    border: 2px solid var(--primary-gold);
+    border: none !important;
     color: var(--text-dark);
 }
 
 .protein-options p:hover {
-    background: var(--primary-gold);
-    color: #000000;
-    transform: scale(1.05);
-    border-color: var(--light-gold);
+    background: transparent !important;
+    color: var(--text-dark);
+    transform: none !important;
+    border: none !important;
 }
 
 /* Salad Options */
