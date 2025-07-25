@@ -136,7 +136,7 @@ nav ul li ul {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: #1a1a1a;
+    background: #000000;
     min-width: 220px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-heavy);
@@ -445,7 +445,7 @@ a:hover::after {
         opacity: 1;
         visibility: visible;
         box-shadow: none;
-        background: rgba(26, 26, 26, 0.95);
+        background: #000000;
         backdrop-filter: blur(10px);
     }
     
