@@ -253,7 +253,7 @@ p {
 }
 
 p strong {
-    color: var(--primary-gold);
+    color: var(--text-dark);
     font-weight: 600;
 }
 
@@ -363,6 +363,54 @@ a:hover::after {
 .store-info p {
     color: var(--text-light);
     margin-bottom: 0.5rem;
+}
+
+/* Remove ALL backgrounds from delivery service mentions */
+*:contains("GrubHub"),
+*:contains("Uber Eats"),
+*:contains("DoorDash"),
+*:contains("grubhub"),
+*:contains("uber eats"),
+*:contains("doordash") {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Override any grid or special styling for delivery services */
+.protein-options *:contains("GrubHub"),
+.protein-options *:contains("Uber Eats"),
+.protein-options *:contains("DoorDash"),
+.menu-item *:contains("GrubHub"),
+.menu-item *:contains("Uber Eats"),
+.menu-item *:contains("DoorDash"),
+section *:contains("GrubHub"),
+section *:contains("Uber Eats"),
+section *:contains("DoorDash") {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Delivery Services - No Background */
+p:contains("GrubHub"),
+p:contains("Uber Eats"), 
+p:contains("DoorDash"),
+.delivery-services p,
+.protein-options p:contains("GrubHub"),
+.protein-options p:contains("Uber Eats"),
+.protein-options p:contains("DoorDash") {
+    background: transparent !important;
+    border: none !important;
+    padding: 0.5rem 0 !important;
+    transform: none !important;
 }
 
 /* Protein Options Grid */
