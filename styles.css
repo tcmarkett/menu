@@ -462,39 +462,94 @@ p:contains("DoorDash"),
     border: 1px solid var(--primary-gold);
 }
 
-/* Responsive Design */
+/* FIXED RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     :root {
         --container-padding: 1rem;
         --section-spacing: 2rem;
+        --header-height: auto;
+    }
+    
+    /* Fix header for mobile */
+    header {
+        position: relative;
+        height: auto;
+        min-height: 60px;
+        background: #000000;
+        box-shadow: none;
+        border-bottom: 2px solid var(--primary-gold);
+    }
+    
+    nav {
+        padding: 0;
+        height: auto;
     }
     
     nav ul {
         flex-direction: column;
-        gap: 0.5rem;
-        justify-content: flex-start;
-        padding-top: 1rem;
+        align-items: stretch;
+        gap: 0;
         height: auto;
+        padding: 1rem;
     }
     
-    header {
-        height: auto;
-        min-height: var(--header-height);
+    nav > ul > li {
+        width: 100%;
+        margin: 0;
     }
     
     nav > ul > li > a {
-        padding: 0.75rem 1rem;
-        font-size: 0.9rem;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+        width: 100%;
+        transform: none;
+        border-radius: 0;
     }
     
+    nav > ul > li > a:hover {
+        transform: none;
+        background: rgba(255, 215, 0, 0.2);
+    }
+    
+    /* Fix dropdown for mobile */
     nav ul li ul {
         position: static;
         transform: none;
         opacity: 1;
         visibility: visible;
         box-shadow: none;
-        background: #000000;
-        backdrop-filter: blur(10px);
+        background: #1a1a1a !important;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        min-width: auto;
+    }
+    
+    nav ul li ul li {
+        border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        margin: 0;
+    }
+    
+    nav ul li ul li a {
+        padding: 0.75rem 1.5rem;
+        color: var(--primary-gold);
+        background: #1a1a1a;
+        text-transform: none;
+        transform: none;
+    }
+    
+    nav ul li ul li a:hover {
+        background: rgba(255, 215, 0, 0.2);
+        transform: none;
+        color: white;
+    }
+    
+    /* Fix container padding */
+    .container {
+        padding: 2rem 1rem 2rem;
     }
     
     h1 {
@@ -503,38 +558,69 @@ p:contains("DoorDash"),
     
     h2 {
         font-size: 1.8rem;
+        padding-left: 0.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
     }
     
     .protein-options {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     
-    section {
+    section, .dressings {
         padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .salad-options {
+        gap: 1rem;
+    }
+    
+    .salad-options h3 {
+        padding: 0.75rem;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
-    nav ul {
-        gap: 0.2rem;
+    nav > ul > li > a {
+        padding: 0.75rem;
+        font-size: 0.9rem;
     }
     
-    nav > ul > li > a {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.8rem;
+    nav ul li ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
     }
     
     h1 {
         font-size: 1.8rem;
     }
     
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
     .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 1.5rem 0.75rem 1.5rem;
     }
     
     .protein-options {
         grid-template-columns: 1fr;
+    }
+    
+    section, .dressings {
+        padding: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
     }
 }
 
